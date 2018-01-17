@@ -44,7 +44,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Technical Advisory #17-i — This is an interactive version of Technical Advisory #17-i Career Center Certification. Please see also:   All Workforce Development System Technical Advisories TA #17-i Career Center Certification (Printable) </title>
+<title>Technical Advisory #18-1 — This is an interactive version of Technical Advisory #18-1 Career Center Certification. Please see also:   All Workforce Development System Technical Advisories TA #17-i Career Center Certification (Printable) </title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 
@@ -136,13 +136,11 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
-
-<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp</li>
-
-<li>$:/config/TimestampDisable</li>
 
 <li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
 
@@ -234,13 +232,9 @@ Error message and password prompt
 
 <li>$:/state/tab--1963855381</li>
 
-<li>$:/state/tab--2112689675</li>
-
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab/sidebar--1835078512</li>
-
-<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/StoryList</li>
 
@@ -438,7 +432,7 @@ implementing regulations of WIOA sec.
 &lt;!-- step 3 (xxx): generate output, use state with hashed id --&gt;
 </pre>
 </div>
-<div created="20160702121640544" creator="Thomas Elmiger" modified="20180108205405597" modifier="Thomas Elmiger" tags="$:/tags/Stylesheet TextStretch Styles" title="$:/_telmiger/strex.css" type="text/vnd.tiddlywiki">
+<div created="20160702121640544" creator="Thomas Elmiger" modified="20180108204811515" modifier="Thomas Elmiger" tags="$:/tags/Stylesheet TextStretch Styles" title="$:/_telmiger/strex.css" type="text/vnd.tiddlywiki">
 <pre>/* strex standard styling */
 
 .strex-container, .strex-container .tc-reveal, .strex-all {
@@ -447,7 +441,7 @@ implementing regulations of WIOA sec.
 
 .strex-open, .strex-start, .strex-end {
   color: &lt;&lt;colour tiddler-link-foreground&gt;&gt;;
-  padding: 3px 4px 3px 4px;
+  padding: 2px 3px 3px 3px;
   line-height: 96%;
   background-color: #FFFFFF;
   border: 1px solid #027ABF;
@@ -457,7 +451,7 @@ implementing regulations of WIOA sec.
 .strex-start {
   color: &lt;&lt;colour tiddler-link-foreground&gt;&gt;;
   font-weight:bold;
-  padding: 3px 4px 3px 4px;
+  padding: 3px 3px 4px 3px;
   line-height: 96%;
   background-color: #FFFFFF;
   border: 1px solid #027ABF;
@@ -744,26 +738,23 @@ Run the macro
    };
 })();</pre>
 </div>
-<div created="20180108181908494" modified="20180108181908494" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
-<pre>hide</pre>
+<div created="20180108181908494" modified="20180110153040477" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/control-panel">
+<pre>show</pre>
 </div>
 <div created="20180102171704960" modified="20180102171704960" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
+</div>
+<div created="20180109153420128" modified="20180109153420128" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
 <pre>show</pre>
 </div>
 <div created="20180108181902077" modified="20180108181902077" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
 </div>
 <div created="20180108181904525" modified="20180108184108624" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki">
-<pre>hide</pre>
-</div>
-<div created="20180108210405249" modified="20180108210405249" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp">
-<pre>hide</pre>
-</div>
-<div created="20180108210408416" modified="20180108210436431" title="$:/config/TimestampDisable">
-<pre>yes</pre>
+<pre>show</pre>
 </div>
 <div created="20180108182004964" modified="20180108183507192" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit">
-<pre>hide</pre>
+<pre>show</pre>
 </div>
 <div created="20180108182003884" modified="20180108182003884" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions">
 <pre>hide</pre>
@@ -9071,7 +9062,7 @@ Run the macro
 <pre>&lt;$macrocall $name=&quot;timeline&quot; format={{$:/language/RecentChanges/DateFormat}}/&gt;
 </pre>
 </div>
-<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20180102194641891" modified="20180108183447441" tags="$:/tags/hide" title="$:/core/ui/SideBar/Tools">
+<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20180102194641891" modified="20180108183447441" tags="$:/tags/hide $:/tags/SideBar" title="$:/core/ui/SideBar/Tools">
 <pre>\define lingo-base() $:/language/ControlPanel/
 \define config-title()
 $:/config/PageControlButtons/Visibility/$(listItem)$
@@ -9109,7 +9100,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[TextStretch]]</pre>
+# [[attachment_a_table_1.png]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9346,11 +9337,11 @@ svg.tc-image-chevron-right {
 }
 </pre>
 </div>
-<div created="20180102171600526" modified="20180104145944518" title="$:/SiteSubtitle">
-<pre>This is an interactive version of Technical Advisory #17-i Career Center Certification. Please see also:  &lt;div class=&quot;gen&quot;&gt;&lt;ul&gt; &lt;li&gt;[[All Workforce Development System Technical Advisories|https://www.labor.ny.gov/workforcenypartners/tas.shtm]]&lt;/li&gt;&lt;br /&gt; &lt;li&gt;[[TA #17-i Career Center Certification (Printable)|https://www.labor.ny.gov/workforcenypartners/ta/ta-13-7.7.pdf]]&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt;</pre>
+<div created="20180102171600526" modified="20180110153055249" title="$:/SiteSubtitle">
+<pre>This is an interactive version of Technical Advisory #18-1 Career Center Certification. Please see also:  &lt;div class=&quot;gen&quot;&gt;&lt;ul&gt; &lt;li&gt;[[All Workforce Development System Technical Advisories|https://www.labor.ny.gov/workforcenypartners/tas.shtm]]&lt;/li&gt;&lt;br /&gt; &lt;li&gt;[[TA #17-i Career Center Certification (Printable)|https://www.labor.ny.gov/workforcenypartners/ta/ta-13-7.7.pdf]]&lt;/li&gt; &lt;/ul&gt;&lt;/div&gt;</pre>
 </div>
-<div created="20180102171547743" modified="20180102185514992" title="$:/SiteTitle">
-<pre>Technical Advisory #17-i</pre>
+<div created="20180102171547743" modified="20180110153048976" title="$:/SiteTitle">
+<pre>Technical Advisory #18-1</pre>
 </div>
 <div created="20180102190244565" modified="20180102190244565" title="$:/state/showeditpreview">
 <pre>yes</pre>
@@ -9370,7 +9361,7 @@ svg.tc-image-chevron-right {
 <div created="20180104161547869" modified="20180108184016380" title="$:/state/strex_-2139514142_-542703535">
 <pre>hidden</pre>
 </div>
-<div created="20180102212234611" modified="20180108205742093" title="$:/state/strex_-2139514142_-640163971">
+<div created="20180102212234611" modified="20180109153832615" title="$:/state/strex_-2139514142_-640163971">
 <pre>hidden</pre>
 </div>
 <div created="20180102205744925" modified="20180102205746077" title="$:/state/strex_-341284869_-640163971">
@@ -9397,13 +9388,13 @@ svg.tc-image-chevron-right {
 <div created="20180102202419439" modified="20180102210708154" title="$:/state/strex_1968582676_-542703535">
 <pre>hidden</pre>
 </div>
-<div created="20180102202555714" modified="20180108205603661" title="$:/state/strex_1968582676_-640163971">
+<div created="20180102202555714" modified="20180108205007606" title="$:/state/strex_1968582676_-640163971">
 <pre>hidden</pre>
 </div>
 <div created="20180102210042413" modified="20180104162654660" title="$:/state/strex_2093413540_-542703535">
 <pre>hidden</pre>
 </div>
-<div created="20180102205810460" modified="20180108205845320" title="$:/state/strex_2093413540_-640163971">
+<div created="20180102205810460" modified="20180105161344174" title="$:/state/strex_2093413540_-640163971">
 <pre>hidden</pre>
 </div>
 <div created="20180104161703516" modified="20180104161704229" title="$:/state/strex_2124433347_-542703535">
@@ -9412,34 +9403,28 @@ svg.tc-image-chevron-right {
 <div created="20180102212232123" modified="20180104145836635" title="$:/state/strex_2124433347_-640163971">
 <pre>hidden</pre>
 </div>
-<div created="20180108204822251" modified="20180108204828906" title="$:/state/strex_49_-125940345">
+<div created="20180108204822251" modified="20180109153831239" title="$:/state/strex_49_-125940345">
 <pre>hidden</pre>
 </div>
 <div created="20180102210709210" modified="20180102210711482" title="$:/state/strex_49_-542703535">
 <pre>hidden</pre>
 </div>
-<div created="20180102202615593" modified="20180108205249493" title="$:/state/strex_49_-640163971">
+<div created="20180102202615593" modified="20180108205055748" title="$:/state/strex_49_-640163971">
 <pre>hidden</pre>
 </div>
 <div created="20180102172247071" modified="20180102173210817" title="$:/state/strex_error: xuid hashing_-640163971">
 <pre>hidden</pre>
 </div>
-<div created="20180102190933589" modified="20180108210140419" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Toolbars</pre>
+<div created="20180102190933589" modified="20180108203739032" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/StoryView</pre>
 </div>
-<div created="20180108210115507" modified="20180108210128170" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Basics</pre>
-</div>
-<div created="20180102190924438" modified="20180108210150995" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20180102190924438" modified="20180110153044117" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20180102171703728" modified="20180102210732481" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div created="20180108205933942" modified="20180108210019548" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
-</div>
-<div list="$:/plugins/tongerner/ro/publish [[Technical Advisory]]" title="$:/StoryList">
+<div list="$:/ControlPanel [[Technical Advisory]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9488,7 +9473,7 @@ svg.tc-image-chevron-right {
     }
 }</pre>
 </div>
-<div created="20180102173540616" modified="20180108203755539" title="$:/temp/search">
+<div created="20180102173540616" modified="20180109152728283" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20180102190927070" modified="20180102190931446" title="$:/theme">
@@ -10180,7 +10165,7 @@ WIOA sec. 188.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt; </pre>
 </div>
-<div created="20180102171721713" modified="20180108204923520" title="Technical Advisory">
+<div created="20180102171721713" modified="20180109163241538" title="Technical Advisory">
 <pre>&lt;h3&gt;To:&lt;/h3&gt;
 &lt;p&gt;Workforce Development Community&lt;/p&gt;
 &lt;h3&gt;Subject:&lt;/h3&gt;
@@ -10239,10 +10224,10 @@ WIOA sec. 188.&lt;/li&gt;
 &lt;h3&gt;Attachments&lt;/h3&gt;
 &lt;div class=&quot;gen&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;Attachment A - Assessment Methodology Outline&lt;/li&gt;
-&lt;li&gt;Attachment B - Career Center Certification Tool&lt;/li&gt;
-&lt;li&gt;Attachment C - Additional LWDB Certification Criteria&lt;/li&gt;
-&lt;li&gt;Attachment D - Career Center Certification Results&lt;/li&gt;
+&lt;li&gt;[[Attachment A - Assessment Methodology Outline|http://www.labor.ny.gov/workforcenypartners/ta/attachment_a_assessment_methodology_outline.xlsx]]&lt;/li&gt;
+&lt;li&gt;[[Attachment B - Career Center Certification Tool|http://www.labor.ny.gov/workforcenypartners/ta/attachment_b_assessment_tool.xlsm]]&lt;/li&gt;
+&lt;li&gt;[[Attachment C - Additional LWDB Certification Criteria|http://www.labor.ny.gov/workforcenypartners/ta/attachment_c_additional_certification_criteria.docx]]&lt;/li&gt;
+&lt;li&gt;[[Attachment D - Career Center Certification Results|http://www.labor.ny.gov/workforcenypartners/ta/attachment_d_career_center_certification_results.xlsx]]&lt;/li&gt;
 &lt;h3&gt;Inquiries&lt;/h3&gt;
 
 Questions regarding this TA may be directed to: &lt;a href=&quot;mailto:lwdb@labor.ny.gov&quot;&gt;lwdb@labor.ny.gov&lt;/a&gt;.</pre>
